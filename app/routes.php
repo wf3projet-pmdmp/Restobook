@@ -11,6 +11,7 @@
         ['GET|POST', '/restaurant/fiche/[i:id]', 'Restaurant\Restoview#contactresto','resto_contactresto'], // Contact Resto
         ['GET', '/restaurant/fiche/[i:id]', 'Restaurant\Restocustomer#showcoupon','resto_coupon'],
         ['GET|POST', '/restaurant/fiche/[i:id]', 'Restaurant\Restocustomer#reserv','resto_reservation'],
+        ['GET|POST', '/restaurant/search', 'Restaurant\Restoview#research', 'resto_research'],
         
     // Utilisateur
         ['GET|POST', '/users/register', 'Users\Users#register','users_register'], // Inscription
