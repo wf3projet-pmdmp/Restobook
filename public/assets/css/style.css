@@ -1,26 +1,136 @@
-html, body {
-	font-family: Consolas, monaco, monospace;
-	background-color: #272822;
-	color: #F8F8F2;
+@font-face {
+    font-family: "Lucida";
+    src: url('../fonts/lucida-grande.ttf');
+}
+.r-m {
+    margin: 0;
+}
+.r-p {
+    padding: 0;
+}
+body {
+    font-family: , sans-serif;
+    background-color: #fff;
+    color: "000";
+}
+.log {
+    float: right !important;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header {
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+header a {
+    color: #bc2f3a;
+}
+header a:hover {
+    color: #2f65bc;
+    text-decoration: none;
+}
+header ul {
+    display: inline-block;
+}
+header ul li {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
+section {
+    margin-bottom: 50px;
+}
+.slider {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+.view {
+    padding: 10px;
+}
+.fiche {
+    padding: 15px;
+}
+.resto {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    overflow: hidden;
+}
+.content {
+    background-color: #bc2f3a;
+    padding: 15px;
+    border-radius: 20px;
+}
+.more {
+    float: right;
+}
+.button {
+    text-align: center;
+}
+.btn {
+
+}
+label, legend {
+    color: #fff;
+}
+.foot {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image:linear-gradient(#323232, #222222);
+    color: #fff;
+}
+.cmt {
+    text-align: center;
+}
+.info a {
+    color: #fff;
+}
+.copyr {
+    background-color: #bc2f3a;
+    color: #fff;
+}
+#register {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.pwforg  {
+    text-align: center;
+    padding-top: 10px;
+}
+.pwforg a {
+    color: #fff;
+}
+.pwforg a:hover {
+    color: #fff;
 }
 
-.container {
-	margin: 50px;
+/*---------------- LAYOUT BACK --------------------------*/
+.navbar-fixed-top {
+    background-color: #bc2f3a;
+    color: #fff !important;
 }
-
-a {
-	text-decoration: none;
-	color: #A6E22E;
+.top-nav>li>a {
+    color : #fff;
 }
-
-a:hover {
-	color: #F92672;
+.top-nav>li>a:hover, .top-nav>li>a:focus, .top-nav>.open>a, .top-nav>.open>a:hover, .top-nav>.open>a:focus {
+    background-color: #5c0c11;
 }
-
-h1 {
-	color: #F92672;
+.side-nav {
+    background-color: #bc2f3a;
+    color: #fff !important;
 }
-
-h2 {
-	color: #66D9EF;
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #5c0c11;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    background-color: #5c0c11 !important;
+}
+.navbar-inverse .navbar-nav>li>ul>li>a:hover {
+    background-color: #5c0c11 !important;
+}
+.side-nav>li>ul>li>a {
+    color: #fff;
 }
