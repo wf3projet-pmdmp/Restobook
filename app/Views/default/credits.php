@@ -16,8 +16,8 @@
 
 <div class="jumbotron text-center">
 <div img src="">
-  <h2>ASSOCIATION DES RESTAURATEURS DE MARTINIQUE ET DES ANTILLES 
-  <br>(ARMADA)
+  <h3>ASSOCIATION DES RESTAURATEURS DE MARTINIQUE ET DES ANTILLES<h3> 
+  <br><h6>(ARMADA)
 </h2>
   
 </div>
@@ -27,29 +27,30 @@
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="https://placehold.it/1200x400?text=Notre mission" alt="Image">
+        <img src="https://placehold.it/1200x400?text=Notre mission" alt="Former les jeunes">
         <div class="carousel-caption">
-          <h3>Notre mission</h3>
+          <h3>Former les jeunes</h3>
           
         </div>      
       </div>
 
       <div class="item">
-        <img src="https://placehold.it/1200x400?text=Notre vision" alt="Image">
+        <img src="https://placehold.it/1200x400?text=Notre vision" alt="Se rassembler">
         <div class="carousel-caption">
-          <h3>Notre vision</h3>
+          <h3>Se rassembler</h3>
           
         </div>      
       </div>
       <div class="item">
-        <img src="https://placehold.it/1200x400?text=Notre histoire" alt="Image">
+        <img src="https://placehold.it/1200x400?text=Notre histoire" alt="Récompenser">
         <div class="carousel-caption">
-          <h3>Notre histoire</h3>
+          <h3>Récompenser</h3>
           
         </div>      
       </div>
@@ -77,7 +78,7 @@
     </div>    
     </div>
     <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4" >
       <h3>Notre vision </h3>
       <p>L’ARMADA consacre ses efforts à rassembler et à sensibiliser tous ces intervenants aux causes qui leur sont communes. Chaque action posée par L’ARMADA a pour finalité de contribuer à l’essor de ses membres et de les aider à relever de nouveaux défis </p>
     </div>
@@ -139,6 +140,7 @@
                             <div class="form-group">
                                 <div class="col-xs-12">
                                     <button type="submit" class="btn btn-primary" name="contact" value="Envoyer ma Demande">Envoyer ma Demande</button>
+
                                 </div>
                             </div>
                             

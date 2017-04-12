@@ -29,7 +29,7 @@ class RestoviewController extends Controller
     }
     // Fin Méthode
 
-    public function contactresto($id)
+    public function contactresto()
     {
         $errors = [];
         $post = [];

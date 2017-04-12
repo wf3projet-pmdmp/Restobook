@@ -17,9 +17,9 @@
                 <!--<h1>W :: <?= $this->e($title) ?></h1>-->
                 <div class="col-xs-12">
                     <p class="log">
-                        <a href="<?= $this->url('users_login') ?>">Connexion</a>
+                        <a href="<?= $this->url('users_login') ?>">Se Connecter</a>
                         | 
-                        <a href="<?= $this->url('users_register') ?>">Inscription</a>
+                        <a href="<?= $this->url('users_register') ?>">S'Inscrire</a>
                     </p>
                 </div>
 
@@ -44,14 +44,14 @@
 
                     <div class="col-sm-3 info">
                         <p><a href="">Qui sommes-nous ?</a></p>
-                        <p><a href="">Devenir membre de l'association</a></p>
+                        <p><a href="">Devenir membre de l'Association</a></p>
                         <p><a href="">Nous contacter</a></p>
                     </div>
 
                     <div class="col-sm-3">
                         <h3 class="r-m">CONTACT</h3>
-                        <p>ASSOCIATION DES RESTAURATEURS DE MARTINIQUE</p>
-                        <p>97200 Fort-de-France<br>MARTINIQUE<br>Tel : +596(0) 596 00 00 00</p>
+                        <p>ASSOCIATION DES RESTAURATEURS DE MARTINIQUE ET DES ANTILLES (ARMADA)</p>
+                        <p>97200 Fort-de-France<br>MARTINIQUE<br>Tel : +596(0) 596 50 55 62</p>
                     </div>
 
                 </div>
