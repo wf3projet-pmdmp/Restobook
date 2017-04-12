@@ -1,4 +1,4 @@
-?php $this->layout('layoutback', ['title' => 'Accueil']) ?>
+<?php $this->layout('layoutback', ['title' => 'Accueil']) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -17,7 +17,7 @@
 		            <input type="password" class="form-control"/>
 		        </div>
 		         <div class="form-group">
-		            <label>Confirmez le nouveau mot de passe:</label>
+		            <label>Confirmez le nouveau mot de passe :</label>
 		            <input type="password" class="form-control"/>
 		        </div>
 		        <button class="btn btn-primary btn-sm center-block">

@@ -1,22 +1,8 @@
-<?php $this->layout('layout', ['title' => 'Contact']) ?>
+<?php $this->layout('layout', ['title' => 'Accueil']) ?>
 
 <?php $this->start('main_content') ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Formulaire contact restaurant</title>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-
 <div id="result"></div>
-
 <div class="container">
 	<div id="result">
 	   <form method="post" action="traitement_formulaire.php">
@@ -40,7 +26,7 @@
 			</div>
 		  
 		  <div class="form-group"> 
-	      <button type="submit" class="btn btn-default">Envoyer le message</button>
+	      <button type="submit" class="btn btn-default">Envoyez le message</button>
 	      </div>
 	   </form>
 	</div>
