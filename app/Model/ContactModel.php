@@ -8,6 +8,16 @@ class ContactModel extends \W\Model\UsersModel
         parent::__construct();
         $this->setPrimaryKey('id_user');
     }*/
+    
+    public function countContact()
+    {
+        $sql = 'SELECT COUNT(*) as total FROM contact';
 
+        $select = $this->dbh->prepare($sql);
+        $select->execute();
+        $result = $select->fetch();
+
+        return $result;
+    }
 
 }

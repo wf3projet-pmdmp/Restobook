@@ -42,7 +42,7 @@ class ManagerrestoController extends \W\Controller\Controller
         ];
 
         $maxSize = (1024 * 1000) * 2;
-        $uploadDir = $_SERVER['DOCUMENT_ROOT'].$_SERVER['W_BASE'].'/upload/';;
+        $uploadDir = $_SERVER['DOCUMENT_ROOT'].$_SERVER['W_BASE'].'/upload/';
 
         // si le post n'est pas vide, on récupère les données "nettoyées"
         if (!empty($_POST)) {

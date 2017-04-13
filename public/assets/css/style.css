@@ -56,6 +56,13 @@ section {
     padding: 20px;
     overflow: hidden;
 }
+ul {
+    list-style: none;
+}
+.viewresto {
+    background-color: #fff;
+    border-radius: 15px;
+}
 .content {
     background-color: #bc2f3a;
     padding: 15px;
@@ -67,8 +74,8 @@ section {
 .button {
     text-align: center;
 }
-.btn {
-
+.allresto {
+    color: #000;
 }
 label, legend {
     color: #fff;

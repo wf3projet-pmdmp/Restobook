@@ -16,8 +16,13 @@ class AdminusersController extends Controller
 
     public function listAll()
     {
+        $usersModel = new UsersModel();
+        $users = $usersModel->findAll();
+        $params = [
+            'users' => $users
+        ];
 
-        $this->show(SELF::PATH_VIEWS.'/list');
+        $this->show(SELF::PATH_VIEWS.'/list', $params);
     }
 
     public function add()
@@ -28,7 +33,13 @@ class AdminusersController extends Controller
 
     public function view($id)
     {
-        $this->show(SELF::PATH_VIEWS.'/view');
+        $usersModel = new UsersModel();
+        $users = $usersModel->find($id);
+
+        $params = [
+            'users' => $users,
+        ];
+        $this->show(SELF::PATH_VIEWS.'/view', $params);
 
     }
 

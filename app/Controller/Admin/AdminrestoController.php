@@ -14,8 +14,13 @@ class AdminrestoController extends Controller
 
     public function listAll()
     {
+        $restoModel = new RestaurantsModel();
+        $restos = $restoModel->findAll();
+        $params = [
+            'restos' => $restos
+        ];
 
-        $this->show(SELF::PATH_VIEWS.'/list');
+        $this->show(SELF::PATH_VIEWS.'/list', $params);
     }
 
     public function add()
@@ -26,7 +31,13 @@ class AdminrestoController extends Controller
     
     public function view($id)
     {
-        $this->show(SELF::PATH_VIEWS.'/view');
+        $restoModel = new UsersModel();
+        $restos = $restoModel->proprio($id);
+        
+        $params = [
+            'restos' => $restos,
+        ];
+        $this->show(SELF::PATH_VIEWS.'/view', $params);
 
     }
 
