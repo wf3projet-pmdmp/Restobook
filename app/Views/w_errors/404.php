@@ -1,6 +1,8 @@
 <?php $this->layout('layout', ['title' => 'Perdu ?']) ?>
 
 <?php $this->start('main_content'); ?>
-<h1>404. ne paniquez pas !</h1>
-<h3>Allez sur la page d'acceuil</h3>
+<h4>404 : Poissons, volaille, boeuf, fruits de mer, riz ou légumes verts ?</h4>
+<h5>Allez sur la PAGE D'ACCUEIL pour choisir le menu qui vous ressemble</h5>
+
+
 <?php $this->stop('main_content'); ?>

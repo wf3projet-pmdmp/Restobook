@@ -14,5 +14,29 @@ class ReservationsModel extends \W\Model\Model
         return $result;
     }
 
+    public function listAll()
+    {
+
+        $reservationsModel = new ReservationsModel();
+        $reservations = $reservationsModel->findAll();
+        $params = [
+            'reservations' => $reservations
+        ];
+
+        $this->show(SELF::PATH_VIEWS.'/list', $params);
+    }
+
+    public function view($id)
+    {
+         $ReservationsModel = new ReservationsModel();
+        $reservations = $reservationsModel->find($id);
+        $params = [
+            'reservations' => $reservations,
+        ];
+
+        $this->show(SELF::PATH_VIEWS.'/view', $params);
+
+    }
+
 
 }
