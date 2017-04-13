@@ -3,7 +3,7 @@
 	$w_routes = array(
 		['GET', '/', 'Default#home', 'default_home'],
 		['GET', '/legal', 'Default#legal', 'default_legal'],
-		['GET', '/credits', 'Default#credits', 'default_credits'],
+		['GET', '/credits', 'Default#credits', 'default_credits'], // Page mentions légales
         
     // Restaurants
         ['GET|POST', '/restaurant/list', 'Restaurant\Restoview#listAll','resto_listresto'],
