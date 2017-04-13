@@ -8,7 +8,7 @@
     // Restaurants
         ['GET|POST', '/restaurant/list', 'Restaurant\Restoview#listAll','resto_listresto'],
         ['GET|POST', '/restaurant/fiche/[i:id]', 'Restaurant\Restoview#view','resto_viewresto'], // Vue restaurant   
-        ['GET|POST', '/restaurant/fiche/[i:id]', 'Restaurant\Restoview#contactresto','resto_contactresto'], // Contact Resto
+        ['GET|POST', '/restaurant/fiche/', 'Restaurant\Restoview#contactresto','resto_contactresto'], // Contact Resto
         ['GET', '/restaurant/fiche/[i:id]', 'Restaurant\Restocustomer#showcoupon','resto_coupon'],
         ['GET|POST', '/restaurant/fiche/[i:id]', 'Restaurant\Restocustomer#reserv','resto_reservation'],
         

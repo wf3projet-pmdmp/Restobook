@@ -41,7 +41,7 @@ class RestoviewController extends Controller
     }
     // Fin Méthode
 
-    public function contactresto($id)
+    public function contactresto()
     {
         $this->show(SELF::PATH_VIEWS.'/contactresto');
     }
