@@ -1,11 +1,7 @@
-<?php $this->layout('layout', ['title' => 'Accueil']) ?>
+<?php $this->layout('layout', ['title' => 'PRESENTATION ARMADA']) ?>
 
 <?php $this->start('main_content') ?>
-<<<<<<< HEAD
-<h2>Let's code.</h2>
-<p>ESSAI PAGE CREDITS</p>
-<p>Et maintenant, RTFM dans <strong><a href="../docs/tuto/" title="Documentation de W">docs/tuto</a></strong>.</p>
-=======
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -72,31 +68,33 @@
     </a>
 </div>
 
-  
-<div class="container text-align">
+<section id="text-center">  
+<div class="container text-center">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-xs-4">
       <h3>Notre mission </h3>
       <p>Fédérer et regrouper les différents partenaires dans le secteur de la restauration et du tourisme <br>
       Animer et organiser des manifestations touristiques et culturelles.<br>
       Développer, former et structurer les équipements et personnels</p>
     </div>    
-    </div>
-    <div class="row">
-    <div class="col-sm-4" >
-      <h3>Notre vision </h3>
+  </div>
+  <div class="row">
+    <div class="col-xs-4" >
+      <strong><h3>Notre vision </h3></strong>
       <p>L’ARMADA consacre ses efforts à rassembler et à sensibiliser tous ces intervenants aux causes qui leur sont communes. Chaque action posée par L’ARMADA a pour finalité de contribuer à l’essor de ses membres et de les aider à relever de nouveaux défis </p>
     </div>
-    </div> 
-    <div class="row">
-    <div class="col-sm-4">
+  </div> 
+  <div class="row">
+    <div class="col-xs-4">
       <h3>Notre histoire </h3>
       <p>1938 : Le 6 juin 1938 est une date mémorable puisque l'Association était légalement créée.<br>  
      1979 : Afin de se doter d’un nouveau levier de développement, l’Association  organise à Fort-de-france en 1979 son premier Salon Rest-Hôte<br> 
       2017 : Création de la plate-forme de regroupement des restaurateurs </p>
     </div>    
-    </div>   
+  </div>
+
 </div>
+</section>
 
   <section id="contact ">
             <div class="container text-center">
@@ -155,7 +153,6 @@
             </div>
         </section>
 </div>
-
 <footer>
 <div class="footer text-center">
             <p>Réalisation ARMADA - Martinique 2017</p>
@@ -164,6 +161,4 @@
 
 </body>
 </html>
-
->>>>>>> origin/Fixes
 <?php $this->stop('main_content') ?>
