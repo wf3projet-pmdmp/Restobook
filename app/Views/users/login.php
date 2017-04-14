@@ -14,37 +14,37 @@
         <fieldset>
 
             <!-- Form Name -->
-            <legend>Se connecter</legend>
+            <legend>Vous avez déjà un compte ? Connectez-vous !</legend>
 
             <!-- Email -->
             <div class="form-group">
                 <div class="col-xs-12">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" id="email">
+                    <label for="email">Votre Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Entrez un Email valide ">
                 </div>
             </div>
 
             <!-- Password -->
             <div class="form-group">
                 <div class="col-xs-12">
-                    <label for="password">Mot de Passe</label>
+                    <label for="password">Votre Mot de Passe</label>
                     <input type="password" class="form-control" name="password"
-                    id="password">
+                    id="password" placeholder="Entre 8 et 20 caractères">
                 </div>
             </div>
 
 
             <!-- Bouton d'envoi -->
             <div class="col-xs-12" style="text-align:center">
-                <button type="submit" class="btn btn-primary" id="button">Se connecter</button>
-                <a href="<?= $this->url('users_register') ?>"><button type="button" class="btn btn-default">S'inscrire</button></a>
+                <button type="submit" class="btn btn-success" id="button">Se connecter à son compte</button>
+                <a href="<?= $this->url('users_register') ?>"><button type="button" class="btn btn-primary">Créer son compte</button></a>
             </div>
 
         </fieldset>
     </form>
 
     <div class="col-xs-12 pwforg">
-        <a href="">Mot de Passe oubliée ?</a>
+        <a href="">Mot de Passe oublié ?</a>
     </div>
     
 <?php $this->stop('main_content') ?>

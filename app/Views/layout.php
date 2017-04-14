@@ -17,9 +17,9 @@
                 <!--<h1>W :: <?= $this->e($title) ?></h1>-->
                 <div class="col-xs-12">
                     <p class="log">
-                        <a href="<?= $this->url('users_login') ?>">Se Connecter</a>
+                        <a href="<?= $this->url('users_login') ?>">Connectez-vous</a>
                         | 
-                        <a href="<?= $this->url('users_register') ?>">S'Inscrire</a>
+                        <a href="<?= $this->url('users_register') ?>">Créez votre compte </a>
                     </p>
                 </div>
 
@@ -58,7 +58,7 @@
             </footer>
 
             <footer class="col-xs-12 copyr">
-                <p>Copyright © WebForce3 2017</p>
+                <p>Copyright © ARMADA 2017</p>
             </footer>
     </main>
     
