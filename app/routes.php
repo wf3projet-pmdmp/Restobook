@@ -46,9 +46,13 @@
         ['GET|POST', '/admin/restaurants/add/[i:id]', 'Admin\Adminresto#add','admin_addresto'], // Vue Resto
         ['GET|POST', '/admin/restaurants/update/[i:id]', 'Admin\Adminresto#up','admin_updateresto'], // Update Resto
         ['GET|POST', '/admin/restaurants/delete/[i:id]', 'Admin\Adminresto#del','admin_delresto'],// delete restaurant
+        
         ['GET|POST', '/admin/contact', 'Admin\Admincontact#listAll','admin_listcontact'], // demande contact
+        ['GET|POST', '/admin/contact/read', 'Admin\Admincontact#listread','admin_readcontact'], // Message NON lu
         ['GET|POST', '/admin/contact/[i:id]', 'Admin\Admincontact#view','admin_viewcontact'], // demande contact
+        
         ['GET|POST', '/admin/reservation', 'Admin\Adminreserv#listAll','admin_listreserv'], // liste reservation
         ['GET|POST', '/admin/reservation/[i:id]', 'Admin\Adminreserv#view','admin_viewreserv'] // liste reservation
+        
         
 	);

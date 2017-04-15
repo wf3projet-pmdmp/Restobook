@@ -16,7 +16,19 @@ class AdminController extends Controller
 
     public function home()
     {
-
-        $this->show(SELF::PATH_VIEWS.'/home');
+        
+        
+        $countContact = new ContactModel();
+        $countC = $countContact->countUsers();
+        
+       
+        
+       $params = [
+            
+            'countC' => $countC,
+            
+        ];
+        
+       $this->show(SELF::PATH_VIEWS.'/home', $params);
     }
 }

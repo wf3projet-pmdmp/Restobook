@@ -3,6 +3,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
+use \Model\RestaurantsModel;
 
 class DefaultController extends Controller
 {
@@ -12,7 +13,16 @@ class DefaultController extends Controller
 	 */
 	public function home()
 	{
-        $this->show(SELF::PATH_VIEWS.'/home');
+        $restomodel = new RestaurantsModel();
+        $randpicture = $restomodel->randompicture();
+        /*debug($randpicture);*/
+        
+        $datas = [
+            'randpicture'   => $randpicture
+        ];
+        
+        
+        $this->show(SELF::PATH_VIEWS.'/home', $datas);
 	}
     // Fin Méthode Home
     

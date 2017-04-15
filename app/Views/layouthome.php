@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="pmdmp">
-	<title><?= $this->e($title) ?></title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="pmdmp">
+        <title><?= $this->e($title) ?></title>
 
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/bootstrap.min.css') ?>">
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
-    <link rel="stylesheet" href="<?= $this->assetUrl('font-awesome/css/font-awesome.min.css') ?>">
-    
-</head>
-<body>
-    <main class="container-full">
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/bootstrap.min.css') ?>">
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
+        <link rel="stylesheet" href="<?= $this->assetUrl('font-awesome/css/font-awesome.min.css') ?>">
+
+    </head>
+    <body>
+        <main class="container-full">
             <header>
                 <!--<h1>W :: <?= $this->e($title) ?></h1>-->
                 <div class="col-xs-12">
@@ -31,6 +31,12 @@
                     </ul>
                 </div>
             </header>
+            
+            <section class="col-xs-12 r-p">
+                <div class="slider">
+                    <img src="assets/img/slider.jpg" alt="slider" class="img-responsive" />
+                </div>
+            </section>
 
             <section class="container content">
                 <?= $this->section('main_content') ?>
@@ -60,11 +66,9 @@
             <footer class="col-xs-12 copyr">
                 <p>Copyright © WebForce3 2017</p>
             </footer>
-    </main>
-    
-    <script src="<?= $this->assetUrl('js/jquery-3.2.0.min.js') ?>"></script>
-    <script src="<?= $this->assetUrl('js/bootstrap.min.js') ?>"></script>
-    <script src="<?= $this->assetUrl('js/script.js') ?>"></script>
-    
-</body>
+        </main>
+
+        <script src="<?= $this->assetUrl('js/jquery-3.2.0.min.js') ?>"></script>
+        <script src="<?= $this->assetUrl('js/bootstrap.min.js') ?>"></script>
+    </body>
 </html>

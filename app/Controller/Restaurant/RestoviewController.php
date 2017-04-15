@@ -53,15 +53,17 @@ class RestoviewController extends Controller
         // Définition des variables
         $post = [];
         $errors = [];
-        $success = false;
         $errorsText = '';
+        $rsearch = [];
+        $params = [];
+        $noResult = false;
         
         // Si la superglobale n'est pas vide, le formulaire a été soumis
-        if(!empty($_POST)){
+        if(!empty($_GET)){
             
             // On reconstruit les données en retirant les espaces en début et fin de chaîne (trim)
             // Puis en supprimant les balises html & php
-            foreach($_POST as $key => $value){
+            foreach($_GET as $key => $value){
                 $post[$key] = trim(strip_tags($value));
             }
             
@@ -69,15 +71,11 @@ class RestoviewController extends Controller
                 $errors[]= "Entré une recherche";
             }
             
-            if(!v::numeric()->validate($post['range'])){
-                $errors[] = 'La zone de proximité n\'est pas défini';
-            }
-            
             if(count($errors) === 0){ // s'il n'y a aucune erreur...
                 
                 $datas = [
                     'search'    => $post['search'],
-                    'range'     => $post['range'],
+                    'noResult'  => $noResult
                 ];
                     
                 
@@ -85,25 +83,30 @@ class RestoviewController extends Controller
                 $restoModel = new RestaurantsModel();
                 
                 $rsearch = $restoModel->research($datas['search']);
-                debug($rsearch); die;
-
-                $success = true;
-                    //Afficher en couleur les mots..
-                
+                /*debug($rsearch);*/
+                if(count($rsearch) === 0) {
+                    $noResult = true;
+                }
+        
                 
             } else {
                 $errorsText = implode('<br>', $errors);
-                var_dump($errorsText);
+                
             }
-        } else { 
-            // Les variables que l'on transmet à la vue. Les clés du tableau ci-dessous deviendront les variables qu'on utilisera dans la vue.
-            $params = [
-                'success'   => $success,
-                'errorText' => $errorsText,
-                'rsearch'   => $rsearch
-            ];   
-           $this->show(SELF::PATH_VIEWS.'/search', $params);
-        }
+            
+            
+        }  // endif(!empty($_POST));
+        
+        // Les variables que l'on transmet à la vue. Les clés du tableau ci-dessous deviendront les variables qu'on utilisera dans la vue.
+        $params = [
+
+            'errors' => $errors,
+            'rsearch'   => $rsearch,
+            'noResult'  => $noResult
+
+        ];   
+        $this->show(SELF::PATH_VIEWS.'/search', $params);
+        
     }
     // Fin Méthode
 

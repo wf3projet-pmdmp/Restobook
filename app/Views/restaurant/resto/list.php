@@ -25,7 +25,7 @@
                     <td>
                         <!-- view_menu.php?id=6 -->
                         <a href="<?=$this->url('resto_viewresto', ['id' => $lresto['id_resto']]); ?>">Visualiser
-                        <?php echo $w_current_route; ?>
+                        <!--<?php echo $w_current_route; ?>-->
 
                         </a>
                     </td>

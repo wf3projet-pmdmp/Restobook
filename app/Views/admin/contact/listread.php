@@ -32,7 +32,7 @@
 
         <tbody>
             <!-- foreach permettant d'avoir une ligne <tr> par ligne SQL -->
-            <?php foreach($contacts as $contact): ?>
+            <?php foreach($read as $contact): ?>
 
             <tr>
                 <td><?=$contact['id_contact']; ?></td>

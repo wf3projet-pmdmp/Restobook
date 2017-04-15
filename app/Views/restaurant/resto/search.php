@@ -2,84 +2,68 @@
 
 <?php $this->start('main_content') ?>
 
-    <div id="result">
     
-    <?php if($success == true): // La variable $success est envoyé via le controller?>
-			<p style="color:green">Bravo, votre article a été envoyé</p>
-		<?php endif; ?>
-    <?php if(!empty($errors)): // La variable $errors est envoyé via le controller?>
-		<p id="errors" style="color:red"><?=implode('<br>', $errors); ?></p>
-	<?php endif; ?>
-</div>
-   
+        <?php if(!empty($errors)): // La variable $errors est envoyé via le controller?>
+            <p id="errors" style="color:black"><?=implode('<br>', $errors); ?></p>
+        <?php endif; ?>
+        
+        <?php if($noResult == true): ?>
+            <p style="color:blue">Il n'y a pas de resultat pour votre recherche</p>
+        <?php endif; ?> 
+    
     <div class="col-xs-12">
-        <form id="research" action="" class="form-horizontal col-xs-6 col-xs-offset-3" method="post">
+        <form id="research" class="form-horizontal col-xs-6 col-xs-offset-3" method="get">
             <fieldset>
 
                 <!-- Form Name -->
-                <legend>Rechercher un Restaurant</legend>
+                <legend>Rechercher un Restaurant ou un Evenement</legend>
 
-
+                <!--<div id="ajax-loader"></div>-->
                 <!-- Champ Recherche -->
                 <div class="form-group">
                     <div class="col-xs-12">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
-                            <input type="search" name="search" id="search" style="color:black">
+                            <input type="search" name="search" id="s" style="color:black">
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Champ Proximité -->
-                <div class="form-group">
-                    <div class="col-xs-12">
-                        <label for="range">Combien de Km de vous</label>
-                        <input type="range" name="range" id="range" value="100" min="0" max="100" step="5">
                     </div>
                 </div>
                 
                 <!-- Bouton d'envoi -->
                 <div class="col-xs-12" style="text-align:center">
-                    <button type="submit" class="btn btn-primary" id="button">S'inscrire</button>
+                    <button type="submit" class="btn btn-primary" id="button">Rechercher</button>
                 </div>
             </fieldset>
         </form>
     </div>
     
-    <br>
-    <br>
     
-    <table class="table table-inverse table-responsive">
-        <thead>
-            <tr>
-                <th>Nom</th>
-                <th>Description</th>
-                <th>Spécialités</th>
-                <th>Adresse</th>
-                <th></th>
-            </tr>
-        </thead>
+    <ul class="r-p">
+        <!-- foreach permettant d'avoir une ligne <tr> par ligne SQL -->
+        <?php foreach($rsearch as $lresto): ?>
+            <li class="col-xs-12 r-m viewresto">
+                <div class="col-xs-3">
+                    <img src="<?= $this->assetUrl($lresto['picture_header']);?>" class="img-responsive" alt="cmt">
+                </div>
 
-        <tbody>
-            <!-- foreach permettant d'avoir une ligne <tr> par ligne SQL -->
-            <?php foreach($rsearch as $rsh): ?>
+               <div class="col-xs-3">
+                    <h3><?=$lresto['name']; ?></h3>
+                    <p><?=$lresto['description']; ?></p>
+                </div>  
 
-                <tr>
-                    <td><?=$rsh['name']; ?></td>                        
-                    <td><?=$rsh['description']; ?></td>
-                    <td><?=$rsh['speciality']; ?></td>
-                    <td><?=$rsh['address']; ?></td>
-                    <td>
-                        <!-- view_menu.php?id=6 -->
-                        <a href="<?=$this->url('resto_viewresto', ['id' => $rsh['id_resto']]); ?>">Visualiser
-                        <?php echo $w_current_route; ?>
+               <div class="col-xs-3">
+                    <p><?=$lresto['speciality']; ?></p>
+                    <p><?=$lresto['city']; ?></p>
+                </div>
 
-                        </a>
-                    </td>
-                </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
+               <div class="col-xs-3">
+                    <!-- view_menu.php?id=6 -->
+                    <a href="<?=$this->url('resto_viewresto', ['id' => $lresto['id_resto']]); ?>">Visualiser</a>
+                </div>
+            </li>
+        <?php endforeach; ?>
+        
+    </ul>
     
     
 

@@ -1,6 +1,7 @@
 <?php $this->layout('layoutback', ['title' => 'Accueil']) ?>
 
 <?php $this->start('main_content') ?>
+
 <div class="container-fluid">
 
     <!-- Page Heading -->
@@ -27,7 +28,7 @@
                             <i class="fa fa-user fa-5x"></i>
                         </div>
                         <div class="col-xs-9 text-right">
-                            <div class="huge">26</div>
+                            <div class="huge"><?=$countU['total'];?></div>
                             <div>Liste des Utilisateurs !</div>
                         </div>
                     </div>
@@ -49,7 +50,7 @@
                             <i class="fa fa-cutlery fa-5x"></i>
                         </div>
                         <div class="col-xs-9 text-right">
-                            <div class="huge">12</div>
+                            <div class="huge"><?=$countR['total'];?></div>
                             <div>Liste des Restaurants !</div>
                         </div>
                     </div>
@@ -71,7 +72,7 @@
                             <i class="fa fa-ticket fa-5x"></i>
                         </div>
                         <div class="col-xs-9 text-right">
-                            <div class="huge">124</div>
+                            <div class="huge"><?=$countRes['total'];?></div>
                             <div>Liste des Réservations !</div>
                         </div>
                     </div>
@@ -93,7 +94,7 @@
                             <i class="fa fa-envelope fa-5x"></i>
                         </div>
                         <div class="col-xs-9 text-right">
-                            <div class="huge">13</div>
+                            <div class="huge"><?=$countC['total'];?></div>
                             <div> Contacts !</div>
                         </div>
                     </div>

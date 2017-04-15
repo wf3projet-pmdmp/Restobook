@@ -153,7 +153,7 @@
                                     <a href="<?= $this->url('admin_listcontact') ?>"><i class="fa fa-fw fa-envelope-o"></i> Nouveaux messages</a>
                                 </li>
                                 <li>
-                                    <a href="<?= $this->url('admin_listcontact') ?>"><i class="fa fa-fw fa-envelope-open-o"></i> Déja lus</a>
+                                    <a href="<?= $this->url('admin_readcontact') ?>"><i class="fa fa-fw fa-envelope-open-o"></i> Déja lus</a>
                                 </li>
                             </ul>
                         </li>
