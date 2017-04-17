@@ -64,7 +64,7 @@ class ManagerrestoController extends \W\Controller\Controller
             }
 
             if (v::numeric()->length(5,5)->validate($resto['zipcode'])) {
-                $errors[] = 'Le code postale est incorrecte';
+                $errors[] = 'Le code postal est incorrecte';
             }
 
             if (!v::length(2,20)->validate($resto['city'])) {

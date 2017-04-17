@@ -16,12 +16,10 @@
 <body>
 
 <div class="jumbotron text-center">
-<div img src="">
+<div>
   <h3>ASSOCIATION DES RESTAURATEURS DE MARTINIQUE ET DES ANTILLES<h3> 
   <br><h6>(ARMADA)
-</h2>
-  
-</div>
+  </div>
 </div>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -60,39 +58,38 @@
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span class="sr-only">Précédent</span>
     </a>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span class="sr-only">Suivant</span>
     </a>
 </div>
 
 <section id="text-center">  
 <div class="container text-center">
-  <div class="row">
+  
     <div class="col-xs-4">
       <h3>Notre mission </h3>
       <p>Fédérer et regrouper les différents partenaires dans le secteur de la restauration et du tourisme <br>
       Animer et organiser des manifestations touristiques et culturelles.<br>
       Développer, former et structurer les équipements et personnels</p>
     </div>    
-  </div>
-  <div class="row">
+  
+  
     <div class="col-xs-4" >
       <strong><h3>Notre vision </h3></strong>
       <p>L’ARMADA consacre ses efforts à rassembler et à sensibiliser tous ces intervenants aux causes qui leur sont communes. Chaque action posée par L’ARMADA a pour finalité de contribuer à l’essor de ses membres et de les aider à relever de nouveaux défis </p>
     </div>
-  </div> 
-  <div class="row">
+   
+  
     <div class="col-xs-4">
       <h3>Notre histoire </h3>
       <p>1938 : Le 6 juin 1938 est une date mémorable puisque l'Association était légalement créée.<br>  
-     1979 : Afin de se doter d’un nouveau levier de développement, l’Association  organise à Fort-de-france en 1979 son premier Salon Rest-Hôte<br> 
+     1979 : l’Association  organise à Fort-de-france en 1979 son premier Salon Rest-Hôte<br> 
       2017 : Création de la plate-forme de regroupement des restaurateurs </p>
     </div>    
-  </div>
-
+  
 </div>
 </section>
 
